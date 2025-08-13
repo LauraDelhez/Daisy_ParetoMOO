@@ -19,8 +19,6 @@
       (Seed LAI (DSLAI05   0.15))
       (Canopy 
           (SpLAI     0.019)
-          ;; LeafAIMod may never be 0.0 -pa
-          ;; (LeafAIMod (0.0 1.0) (1.1 1.0) (1.50 0.90) (1.8 0.0))
           (LAIDist0 0.00 0.00 1.00)
           (LAIDist1 0.10 0.80 1.00)
           (PARrel 0.02)
@@ -62,7 +60,8 @@
           (r_SOrg     0.030)
           (ShldResC   0.10)
           (ReMobilDS  1.00)
-          (ReMobilRt_DS  (1 0.0 [d^-1]) (1.25 0.01 [d^-1]) (1.55 0.1 [d^-1]) (1.75 0.05 [d^-1]) (1.9 0.03 [d^-1]) )
+		  (ReMobilRt  0.1)
+          (ReMobil_Mod  (1 0.0) (1.25 0.1) (1.55 1) (1.75 0.5) (1.9 0.3))
           (ReMobilEff 0.7)
           (Large_RtDR 0.05)
           (ExfoliationFac 0.5)
@@ -187,4 +186,5 @@
       		             	 (25 3.065) (26 3.303) (27 3.559) (28 3.834) (29 4.132) (30 4.452) (32 5) (40 5))
                      (efficiency 0.50 0.50 []))
            (AOM-DIRECT (C_per_N 11 [(g C/cm^3)/(g N/cm^3)])
+
                       (turnover_rate 1.0 [h^-1]))))
