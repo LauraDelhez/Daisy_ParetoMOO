@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/1037199630.svg)](https://doi.org/10.5281/zenodo.16836123)
 # Daisy_ParetoMOO
 All python scripts and input files needed to run SMPSO on Daisy
 
